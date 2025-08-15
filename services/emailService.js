@@ -1,6 +1,7 @@
 
 import nodemailer from "nodemailer";
 
+// función refactorizada por inteligencia artificial 
 export const sendEmail = async ({ to, subject, text }) => {
   try {
     const transporter = nodemailer.createTransport({

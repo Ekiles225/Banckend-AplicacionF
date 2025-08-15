@@ -10,6 +10,7 @@ const STUDENT_ROLE_ID = 3;
 const TEACHER_ROLE_ID = 2;
 
 // Crear tutoría con validación de roles
+// función refactorizada por inteligencia artificial 
 export const createTutoring = async (req, res) => {
   try {
     const { student_id, teacher_id, topic, description, date } = req.body;
@@ -92,6 +93,7 @@ export const getTutorings = async (req, res) => {
 };
 
 // Actualizar tutoría (p.ej. cambiar estado)
+// función refactorizada por inteligencia artificial 
 export const updateTutoring = async (req, res) => {
   try {
     const { id } = req.params;
@@ -121,6 +123,7 @@ export const deleteTutoring = async (req, res) => {
 };
 
 // Reporte semanal filtrado por estudiante
+// función refactorizada por inteligencia artificial 
 export const getWeeklyReport = async (req, res) => {
   try {
     const { student_id } = req.params;
